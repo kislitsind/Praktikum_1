@@ -58,10 +58,10 @@ print_matrix(A)
 
 original_matrix = A.copy()
 i = 0
-while i < len(A):
+for i < len(A):
     j = 0
     max_element = max(A[i])
-    while j < len(A[i]):
+    for j < len(A[i]):
         print(A[i][j], 'делим на ', max(get_column(A, j)))
         A[i][j] /= max(get_column(original_matrix, i))
         A[i][j] = round(A[i][j], 1)
